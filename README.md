@@ -9,6 +9,8 @@ A RESTful API built with **Node.js**, **Express.js**, and **MongoDB**, designed 
 
 - Overview
 - Features
+- Live Demo
+- Presentation Link
 - Technologies Used
 - API Endpoints
 - Installation & Setup
@@ -38,6 +40,11 @@ The Flower Website Backend is a complete API server to manage an online flower s
 -  Error handling middleware
 -  Environment configuration using `dotenv`
 
+## Live Demo
+[Live Demo](https://flower-website-backend-two-2.onrender.com)
+
+## Presentation Link
+[Presentation Link](https://www.loom.com/share/e3bc650da79d444ca0675375ec3c3df8?sid=5c99c623-0140-4b54-9427-b4b078aea5ab)
 ##  Technologies Used
 
 - Node.js
