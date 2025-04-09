@@ -58,20 +58,11 @@ The Flower Website Backend is a complete API server to manage an online flower s
 
 ##  API Endpoints
 
-Base URL: `http://localhost:5000`
+The API will be running on `http://localhost:5000`
 
-###  Auth
-- `POST /api/users/signup` — Register a new user  
-- `POST /api/users/login` — Log in existing user  
-
-###  Flowers
-- `GET /api/flowers` — Get all flowers  
-- `GET /api/flowers/:id` — Get a flower by ID  
-- `POST /api/flowers` — Create a new flower (image upload supported)  
-- `PATCH /api/flowers/:id` — Update a flower  
-- `DELETE /api/flowers/:id` — Delete a flower  
-
----
+- POST /api/users/signup — Register a new user  
+- POST /api/users/login — Log in existing user  
+ 
 
 ##  Installation & Setup
 

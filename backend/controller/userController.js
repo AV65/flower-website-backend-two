@@ -25,5 +25,17 @@ try {
 
 }
 
+// Get all users
+const getAllUsers = async (req, res) => {
+    try {
+      const users = await User.find({}, 'Email Password token'); // only select specific fields
+  
+      res.status(200).json(users);
+    } catch (err) {
+      res.status(500).json({ error: 'Server error', details: err.message });
+    }
+  };
+  
 
-module.exports = {loginUser, signupUser}
+
+module.exports = {loginUser, signupUser, getAllUsers}
