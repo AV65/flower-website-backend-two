@@ -41,7 +41,7 @@ The Flower Website Backend is a complete API server to manage an online flower s
 -  Environment configuration using `dotenv`
 
 ## Live Demo
-[Live Demo](https://flower-website-backend-two-2.onrender.com)
+[Live demo](https://flower-website-backend-two-2.onrender.com)
 
 ## Presentation Link
 [Presentation Link](https://www.loom.com/share/e3bc650da79d444ca0675375ec3c3df8?sid=5c99c623-0140-4b54-9427-b4b078aea5ab)
@@ -58,11 +58,21 @@ The Flower Website Backend is a complete API server to manage an online flower s
 
 ##  API Endpoints
 
-The API will be running on `http://localhost:5000`
+The API will be running on http://localhost:5000
 
+###  Auth
 - POST /api/users/signup — Register a new user  
-- POST /api/users/login — Log in existing user  
- 
+- POST /api/users/login — Log in existing user
+- GET /api/users/getusers — Shows all the registered users
+
+
+###  Flowers
+- GET /api/flowers — Get all flowers  
+- GET /api/flowers/:id — Get a flower by ID  
+- POST /api/flowers — Create a new flower (image upload supported)  
+- PATCH /api/flowers/:id — Update a flower  
+- DELETE /api/flowers/:id — Delete a flower  
+
 
 ##  Installation & Setup
 
