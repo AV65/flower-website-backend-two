@@ -15,13 +15,16 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage });
 
-//Get all flowers
+// Get all flowers with optional category filtering
 const getFlowers = async (req, res) => {
     try {
-        const flowers = await Flower.find({}).sort({ createdAt: -1 });
+        const category = req.query.category;
+        const filter = category ? { Category: category } : {};
+
+        const flowers = await Flower.find(filter).sort({ createdAt: -1 });
         res.status(200).json(flowers);
     } catch (error) {
-        res.status(500).json({ error: 'Server error' });
+        res.status(404).json({ error: 'Server error' });
     }
 };
 
