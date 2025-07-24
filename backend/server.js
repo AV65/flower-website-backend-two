@@ -12,12 +12,7 @@ const cors = require('cors');
 
 // cors permission to GET request from multiple environments
 
-app.use(cors({
-  origin: [
-    'http://localhost:3000',
-    'https://admin-panel-b3lg.onrender.com' 
-  ]
-}));
+app.use(cors());
 
 
 
