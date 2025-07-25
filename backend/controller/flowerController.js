@@ -44,7 +44,7 @@ const getFlower = async (req, res) => {
 };
 
 //Create a new flower with image upload to cloudinary
-const cloudinary = require('../utils/cloudinary');
+const cloudinary = require('../util/Cloudinary');
 
 const createFlower = async (req, res) => {
   const { Title, Description, Price, Category } = req.body;
