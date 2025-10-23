@@ -7,7 +7,7 @@ const {
   deleteFlower,
   updateFlower,
   upload,
-} = require('../controllers/flowerController'); // ✅ corrected folder name: "controllers", not "controller"
+} = require('../controller/flowerController'); // ✅ corrected folder name: "controllers", not "controller"
 
 // ✅ Get all flowers (optionally filter by category)
 router.get('/', getFlowers);
