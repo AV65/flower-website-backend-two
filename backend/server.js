@@ -35,7 +35,7 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(err => console.error("❌ MongoDB connection error:", err));
 
 // ✅ Serve uploaded images statically (for locally stored files)
-app.use('/stripe', StripeRouter);
+app.use('/api/stripe', StripeRouter);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // ✅ API Routes
