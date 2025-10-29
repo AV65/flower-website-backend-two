@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const cors = require('cors');
 require('dotenv').config();
-const StripeRouter = require('./util/Stripe');
+const StripeRouter = require('./routes/Stripe');
 
 const flowersRouter = require('./routes/flowers'); 
 const userRouter = require('./routes/users');
