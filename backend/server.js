@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const cors = require('cors');
 require('dotenv').config();
+const StripeRouter = require('./util/Stripe');
 
 const flowersRouter = require('./routes/flowers'); 
 const userRouter = require('./routes/users');
@@ -34,6 +35,7 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .catch(err => console.error("❌ MongoDB connection error:", err));
 
 // ✅ Serve uploaded images statically (for locally stored files)
+app.use('/stripe', StripeRouter);
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // ✅ API Routes
